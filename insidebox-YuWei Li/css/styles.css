@@ -1,0 +1,103 @@
+body {
+    background-color: #eee;
+    font-family: 'Nunito', sans-serif;
+}
+
+.inner-container {
+    max-width: 90rem;
+    max-height: 64rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    color: #727B81;
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.0375rem;
+}
+
+span {
+    color: #0A91DE;
+}
+
+p {
+    color: #727B81;
+    font-family: Manrope;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 2rem;
+
+}
+
+svg {
+    width: 1.3rem;
+    height:1.3rem;
+    padding-top: 0.4rem;
+}
+
+a {
+    color: #666F74;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: all 0.1s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main-menu li {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 9.63rem;
+    top: -1rem;
+    border-radius: 0.4375rem;
+    border: 1px solid #0A91DE;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 #DDD;
+    padding: 1.13rem;
+    width: 10rem;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+    ;
+}
+
+.dropdown-menu li:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: teal;
+
+}
+
+
+
+
+.main-menu li:hover svg path {
+    color: teal;
+    stroke: teal;
+}
+
+.main-menu li:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
